@@ -9,21 +9,21 @@ const Nav = () => {
     return (
         <div className=" flex justify-center overflow-hidden">
             <nav className="flex w-full">
-                    <div className="flex justify-between items-center w-full h-10 bg-zinc-900">
+                    <div className="flex justify-between items-center w-full h-12 bg-amber-200">
                         <div className=" flex font-sans cursor-pointer m-5">
-                            <il className="px-2.5 py-1 underline underline-offset-8 text-zinc-500 font-bold text-sm">
-                                <Link to="/">3956AUTO</Link>
+                            <il className="px-2.5 py-1 underline underline-offset-8 text-zinc-800 font-bold text-sm">
+                                <Link to="/">labellskin.lab</Link>
                             </il>
-                            <il className="px-5 py-2 font-mono hover:bg-white rounded-3xl text-zinc-300 text-xs">
+                            <il className="px-5 py-2 font-mono hover:bg-white rounded-3xl text-zinc-600 text-xs">
                                 <Link to="/Collections">Collections</Link>
                             </il>
-                            <il className="px-5 py-2 font-mono hover:bg-white rounded-3xl text-zinc-300 text-xs">
+                            <il className="px-5 py-2 font-mono hover:bg-white rounded-3xl text-zinc-600 text-xs">
                                 <Link to="/AllProducts">All Products</Link>
                             </il>
-                            <il className="px-5 py-2 font-mono hover:bg-white rounded-3xl text-zinc-300 text-xs">
+                            <il className="px-5 py-2 font-mono hover:bg-white rounded-3xl text-zinc-600 text-xs">
                                 <Link to="/Payment">Payment Method</Link>
                             </il>
-                            <il className="px-5 py-2 font-mono hover:bg-white rounded-3xl text-zinc-300 text-xs">
+                            <il className="px-5 py-2 font-mono hover:bg-white rounded-3xl text-zinc-600 text-xs">
                                 <Link to="/ContactUs">Contact Us</Link>
                             </il>
                         </div>

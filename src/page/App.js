@@ -4,24 +4,21 @@ import comb from '../pic/comb.jpg'
 import aveda from '../pic/aveda.jpg'
 import boom from '../pic/boom.jpg'
 import guasha from '../pic/guasha.jpg'
+import Product from "../component/Product"
 function App() {
     const slides = [
-        <img className="w-screen h-screen bg-cover bg-center" src={comb} alt='1' />,
-        <img className="w-screen h-screen bg-cover bg-center" src={aveda} alt='2' />,
-        <img className="w-screen h-screen bg-cover bg-center" src={boom} alt='3' />,
-        <img className="w-screen h-screen bg-cover bg-center" src={guasha} alt='4' />,
+        comb,
+        aveda,
+        boom,
+        guasha,
     ];
-    const containerStyles = {
-        width: "500px",
-        height: "280px",
-        margin: "0 auto",
-    };
 
     return (
-        <div className="w-full h-full justify-center flex-col">
+        <div className="flex-col w-full h-auto bg-cover justify-center border-amber-200 border-4 overflow-y-scroll" >
             <Nav />
-            <div style={containerStyles}>
-                <ImageSlider slides={slides} />
+            <div className="w-[80rem] justify-center"> 
+            <ImageSlider slides={slides} />
+            <Product/>
             </div>
         </div>
     )
