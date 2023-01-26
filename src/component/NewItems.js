@@ -6,7 +6,7 @@ const NewItems = ({ newitemz }) =>{
     useEffect(() => {
         const interval = setInterval(() => {
                 setCurrentCarousel(prevCurrentCarousel => {
-                    const isLastSlide = prevCurrentCarousel === NewItemz.length - 1
+                    const isLastSlide = prevCurrentCarousel === newItemz.length - 1
                     const newIndex = isLastSlide ? 0 : prevCurrentCarousel + 1
                     return newIndex
                 })
