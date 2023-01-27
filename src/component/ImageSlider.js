@@ -16,8 +16,7 @@ const ImageSlider = ({ slides }) => {
 
     return (
         <div className="w-full h-2/6 flex justify-center bg-cover bg-center ">
-            <div className="my-5 rounded-lg w-[40rem] h-96 overflow-hidden relative " >
-                <img src={slides[currentCarousel]} alt="" />
+            <div style={{backgroundImage:`url(${slides[currentCarousel]})`}} className=" my-5 w-[700px] h-[400px] overflow-hidden relative rounded-lg ">
             </div>
         </div>
     )

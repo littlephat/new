@@ -21,10 +21,11 @@ function collections() {
         Tce2,
     ];
     return(
-    <div className="flex-col w-full h-screen justify-center">
+    <div className="flex-col w-full h-full justify-center">
             <Nav />
+            <p className="justify-center text-xl text-center text-white ">New Items</p>
             <TopHitzSlider TopHits={TopHits} />
-            <NewItems NewItems={newitemz} />
+            <NewItems newitemz={newitemz} />
         </div>
     )
 }

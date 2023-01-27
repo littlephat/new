@@ -6,7 +6,7 @@ const NewItems = ({ newitemz }) =>{
     useEffect(() => {
         const interval = setInterval(() => {
                 setCurrentCarousel(prevCurrentCarousel => {
-                    const isLastSlide = prevCurrentCarousel === newItemz.length - 1
+                    const isLastSlide = prevCurrentCarousel === newitemz.length - 1
                     const newIndex = isLastSlide ? 0 : prevCurrentCarousel + 1
                     return newIndex
                 })
@@ -15,10 +15,9 @@ const NewItems = ({ newitemz }) =>{
     }, );
 
             return (
-            <div className=" w-full h-full flex justify-center bg-contain bg-center">
-                <div className=" my-5 w-[72rem] h-3/4 overflow-hidden relative " >
-                    <img src={newitemz[currentCarousel]} alt="" />
-                </div>
+            <div className=" w-full h-full flex justify-center ">
+                <div style={{backgroundImage:`url(${newitemz[currentCarousel]})`}} className=" my-5 w-screen h-[500px] overflow-hidden relative">
+        </div>
             </div>
             )
 }
