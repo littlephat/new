@@ -17,7 +17,7 @@ const TopHitzSlider = ({ TopHits }) => {
 
     return (
         <div className=" w-full h-full flex justify-center">
-            <div style={{backgroundImage:`url(${TopHits[currentCarousel]})`}} className=" my-5 w-full h-[500px] overflow-hidden relative">
+            <div style={{backgroundImage:`url(${TopHits[currentCarousel]})`}} className=" my-5 w-full h-[500px] overflow-hidden">
         </div>
             </div >
             )

@@ -9,23 +9,24 @@ import Tce1 from "../pic/3ce1.jpg"
 import Tce2 from "../pic/3ce2.jpg"
 
 function collections() {
-    const TopHits= [
+    const TopHits = [
         K,
         L,
         Twinkle,
     ];
-    
-    const newitemz= [
+
+    const newitemz = [
         Tce,
         Tce1,
         Tce2,
     ];
-    return(
-    <div className="flex-col w-full h-full justify-center">
-            <Nav />
-            <p className="justify-center text-xl text-center text-white ">New Items</p>
-            <TopHitzSlider TopHits={TopHits} />
-            <NewItems newitemz={newitemz} />
+    return (
+        <div className="flex-col w-full h-full justify-center">
+          <Nav />
+            <div className="flex-col w-full h-full justify-center">
+                <TopHitzSlider TopHits={TopHits} />
+                <NewItems newitemz={newitemz} />
+            </div>
         </div>
     )
 }

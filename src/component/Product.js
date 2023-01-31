@@ -13,7 +13,7 @@ const ProductItems = (props) => (
 )
 const Products = () => {
     return (
-        <div className="flex width={1100} h-screen justify-between items-starts cursor-pointer ">
+        <div className="flex w-full h-screen justify-between items-starts cursor-pointer ">
             <div className="flex-col h-full w-1/4 px-3 py-2">
                 <il>
                     <p className="font-sans hover:bg-amber-200 rounded-3xl w-24 px-4 py-1.5 m-4">Clothes</p>
